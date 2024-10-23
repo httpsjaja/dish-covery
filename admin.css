@@ -1,0 +1,45 @@
+.logout-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.horizontal-line {
+    height: 2px;
+    background-color: black;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.logout-btn {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: darkred;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+}

@@ -1,0 +1,295 @@
+/* Reset basic styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+/* Horizontal line styling */
+.horizontal-line {
+    height: 2px;                  /* Set the height of the line */
+    background-color: black;      /* Set the color of the line */
+    width: 100%;                  /* Set the width of the line */
+    margin: 20px 0;               /* Add vertical margin */
+}
+
+/* Sidebar styling */
+.sidebar {
+    position: relative;           /* Ensure positioning for contained elements */
+    padding: 1rem;               /* Add padding around the sidebar */
+}
+
+/* Button container aligned vertically at the top-left corner */
+.btnn-container {
+    display: flex;
+    flex-direction: column;       /* Stack buttons vertically */
+    align-items: flex-start;      /* Align to the left */
+    gap: 1rem;                    /* Space between buttons */
+    position: absolute;           /* Enable precise positioning */
+    top: 100px;                    /* Position below the heading */
+    left: 1rem;                   /* Align container to the left */
+}
+
+/* Button styling */
+.btnn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem 2rem;          /* Adjust padding for balance */
+    width: 12rem;                /* Button width */
+    border-radius: 0.5rem;       /* Rounded corners */
+    border: rgb(53, 53, 53) 0.1rem solid; /* Border styling */
+    font-size: 1rem;             /* Text size */
+}
+
+/* Button container aligned vertically at the top-right corner */
+.btn1-container {
+    display: flex;
+    flex-direction: column;       /* Stack buttons vertically */
+    align-items: flex-start;      /* Align to the left */
+    gap: 1rem;                    /* Space between buttons */
+    position: absolute;           /* Enable precise positioning */
+    top: 100px;                    /* Position below the heading */
+    right: 1rem;                  /* Align container to the right */
+}
+
+/* Button styling for second container */
+.btn1 {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem 2rem;          /* Adjust padding for balance */
+    width: 12rem;                /* Button width */
+    border-radius: 0.5rem;       /* Rounded corners */
+    border: rgb(53, 53, 53) 0.1rem solid; /* Border styling */
+    font-size: 1rem;    
+}
+/* General hover effects for all buttons */
+.btnn-color-2:hover,
+.btnn-color-3:hover,
+.btn1-color-4:hover,
+.btn1-color-5:hover {
+    cursor: pointer;                /* Change cursor on hover */
+    background: rgb(53, 53, 53);   /* Background color on hover */
+    color: white;                  /* Text color on hover */
+    border: rgb(255, 255, 255) 0.1rem solid; /* Border color on hover */
+}
+
+/* Button 2 base styles */
+.btnn-color-2 {
+    background: none;              /* No background */
+}
+
+/* Button 3 base styles */
+.btnn-color-3 {
+    background: none;              /* No background */
+}
+
+/* Button 4 base styles */
+.btn1-color-4 {
+    background: none;              /* No background */
+}
+
+/* Button 5 base styles */
+.btn1-color-5 {
+    background: none;              /* No background */
+}
+
+/* Optional: If you want to explicitly ensure the same styles for btn1 buttons when not hovered */
+.btn1-color-4,
+.btn1-color-5 {
+    background: none;              /* No background */
+}
+
+
+
+
+/* Main content styling */
+main {
+    margin: 0;                   /* Remove default margin */
+    height: 100vh;               /* Full height of the viewport */
+    display: flex;               /* Use flexbox */
+    justify-content: center;      /* Center horizontally */
+    align-items: flex-start;     /* Align items at the top */
+    margin-top: 20px;            /* Add space from the top */
+}
+
+/* Search bar styling */
+.search-bar {
+    display: flex;               /* Use flexbox for alignment */
+    align-items: center;         /* Center items vertically */
+    margin-top: 20px;           /* Space from the top */
+}
+
+.search-bar input {
+    width: 300px;               /* Width of the input field */
+    padding: 10px;              /* Padding inside the input field */
+    font-size: 16px;            /* Font size for the input text */
+    border: 1px solid #ccc;     /* Border for the input field */
+    border-radius: 4px;         /* Rounded corners for the input field */
+}
+
+.search-bar button {
+    padding: 10px 20px;         /* Padding inside the button */
+    margin-left: 10px;          /* Space between input and button */
+    background-color: blue;     /* Button background color */
+    color: white;                /* Button text color */
+    border: none;                /* Remove border */
+    border-radius: 4px;         /* Rounded corners for the button */
+    cursor: pointer;             /* Change cursor on hover */
+}
+
+
+/* Main content styling */
+main {
+    margin: 0;                   /* Remove default margin */
+    height: auto;                /* Allow height to be dynamic */
+    display: center;               /* Use flexbox */
+    flex-direction: column;      /* Stack items vertically */
+    align-items: center;         /* Center items horizontally */
+    margin-top: 20px;            /* Add space from the top */
+}
+
+/* Table container styling */
+.table-container {
+    width: 100%;                 /* Full width for the table container */
+    max-width: 600px;           /* Optional: limit the width */
+    margin: 20px auto;          /* Space above the table and center horizontally */
+    display: flex;               /* Use flexbox for alignment */
+    flex-direction: column;      /* Stack items vertically */
+    align-items: center;         /* Center the table horizontally */
+}
+
+/* Uploaded Recipes heading styling */
+.table-container h2 {
+    text-align: center;          /* Center the heading */
+}
+
+/* Recipe Table styling */
+#recipeTable {
+    width: 100%;                 /* Full width for the table */
+    border-collapse: collapse;   /* Optional: for better border styling */
+}
+
+#recipeTable th, #recipeTable td {
+    text-align: center;          /* Center text in cells */
+    padding: 10px;               /* Add padding for better spacing */
+}
+
+#recipeTable th {
+    background-color: #f2f2f2;   /* Optional: background color for headers */
+}
+/* Add this to your userdash.css file */
+
+/* Add this to your userdash.css file */
+
+.logout-container {
+    position: absolute; /* Use absolute positioning */
+    top: 20px; /* Position it 20px from the top */
+    right: 20px; /* Position it 20px from the right */
+    /* Optional: To prevent overlap with other elements */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.logout-btn {
+    background-color: #ff4c4c; /* Red color for the logout button */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; /* Add some padding */
+    cursor: pointer;
+    font-size: 16px; /* Increase font size */
+}
+
+.logout-btn:hover {
+    background-color: #e63939; /* Darker red on hover */
+}
+/* Search bar styling */
+.search-bar {
+    display: flex;               /* Use flexbox for alignment */
+    align-items: center;         /* Center items vertically */
+    margin-top: 20px;           /* Space from the top */
+}
+
+/* Input field styling */
+.search-bar input {
+    width: 300px;               /* Width of the input field */
+    padding: 10px;              /* Padding inside the input field */
+    font-size: 16px;            /* Font size for the input text */
+    border: 1px solid #ccc;     /* Border for the input field */
+    border-radius: 4px;         /* Rounded corners for the input field */
+    transition: border-color 0.3s; /* Transition for border color on focus */
+}
+
+/* Change border color on focus */
+.search-bar input:focus {
+    border-color: blue;         /* Blue border when focused */
+    outline: none;              /* Remove default outline */
+}
+
+/* Button styling */
+.search-bar button {
+    padding: 10px 20px;         /* Padding inside the button */
+    margin-left: 10px;          /* Space between input and button */
+    background-color: blue;     /* Button background color */
+    color: white;                /* Button text color */
+    border: none;                /* Remove border */
+    border-radius: 4px;         /* Rounded corners for the button */
+    cursor: pointer;             /* Change cursor on hover */
+    transition: background-color 0.3s; /* Transition for background color on hover */
+}
+
+/* Button hover effect */
+.search-bar button:hover {
+    background-color: darkblue; /* Darker blue on hover */
+}
+
+/* Center the search bar horizontally on the page */
+.search-bar {
+    display: flex;                      /* Use flexbox for alignment */
+    justify-content: center;            /* Center items horizontally */
+    align-items: center;                /* Center items vertically */
+    margin: 20px auto;                 /* Center the search bar with vertical spacing */
+}
+
+/* Input field styling */
+.search-bar input {
+    width: 300px;                      /* Width of the input field */
+    padding: 10px;                     /* Padding inside the input field */
+    font-size: 16px;                   /* Font size for the input text */
+    border: 1px solid #ccc;            /* Border for the input field */
+    border-radius: 4px;                /* Rounded corners for the input field */
+    transition: border-color 0.3s;     /* Transition for border color on focus */
+}
+
+/* Change border color on focus */
+.search-bar input:focus {
+    border-color: blue;                /* Blue border when focused */
+    outline: none;                     /* Remove default outline */
+}
+
+/* Button styling */
+.search-bar button {
+    padding: 10px 20px;                /* Padding inside the button */
+    margin-left: 10px;                 /* Space between input and button */
+    background-color: blue;            /* Button background color */
+    color: white;                       /* Button text color */
+    border: none;                       /* Remove border */
+    border-radius: 4px;                /* Rounded corners for the button */
+    cursor: pointer;                    /* Change cursor on hover */
+    transition: background-color 0.3s; /* Transition for background color on hover */
+}
+
+/* Button hover effect */
+.search-bar button:hover {
+    background-color: darkblue;        /* Darker blue on hover */
+}
+.container {
+    display: flex;                      /* Use flexbox for alignment */
+    flex-direction: column;             /* Stack items vertically */
+    align-items: center;                /* Center items horizontally */
+    margin-top: 5rem;                  /* Margin from the top, adjust as necessary */
+}
+
+.container h2 {
+    text-align: center;                 /* Center the text */
+    margin-bottom: 20px;               /* Space below the heading */
+}
